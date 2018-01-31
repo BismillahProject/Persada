@@ -1,0 +1,42 @@
+﻿@model Persada.Fr.ModelView.TOURIS_TV_COUNTRY
+@{
+    ViewBag.Title = "Detail Country";
+}
+
+<h2>@ViewBag.Title.</h2>
+
+<div>
+    <h4>Detail Country</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Country Code
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COUNTRY_CODE)
+        </dd>
+
+        <dt>
+            Country Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COUNTRY_NAME)
+        </dd>
+
+        <dt>
+            Country Description
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COUNTRY_DESCRIPTION)
+        </dd>
+
+    </dl>
+
+    <div class="form-actions no-color">
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+
+</div>

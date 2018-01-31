@@ -1,0 +1,630 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TourismpediaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TOURIS_TM_CATEGORY">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CATEGORY_CODE" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CATEGORY_NAME" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CATEGORY_DESCRIPTION" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="datetime" Nullable="false" />
+    <Property Name="CREATED_BY" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="datetime" />
+    <Property Name="LAST_MODIFIED_BY" Type="varchar" MaxLength="50" />
+    <Property Name="ROW_STATUS" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TOURIS_TM_CITY">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PROVINCE_ID" Type="int" Nullable="false" />
+    <Property Name="CITY_NAME" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CITY_CODE" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CITY_DESCRIPTION" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="datetime" Nullable="false" />
+    <Property Name="CREATED_BY" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="datetime" />
+    <Property Name="LAST_MODIFIED_BY" Type="varchar" MaxLength="50" />
+    <Property Name="ROW_STATUS" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TOURIS_TM_COUNTRY">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="COUNTRY_NAME" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="COUNTRY_CODE" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="COUNTRY_DESCRIPTION" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="datetime" Nullable="false" />
+    <Property Name="CREATED_BY" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="datetime" />
+    <Property Name="LAST_MODIFIED_BY" Type="varchar" MaxLength="50" />
+    <Property Name="ROW_STATUS" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TOURIS_TM_CULINARY">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CULINARY_NAME" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CULINARY_DESCRIPTION" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="CATEGORY_ID" Type="int" Nullable="false" />
+    <Property Name="VILLAGE_ID" Type="int" Nullable="false" />
+    <Property Name="ADDRESS" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="datetime" Nullable="false" />
+    <Property Name="CREATED_BY" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="datetime" />
+    <Property Name="LAST_MODIFIED_BY" Type="varchar" MaxLength="50" />
+    <Property Name="ROW_STATUS" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TOURIS_TM_CULINARY_PHOTO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CULINARY_ID" Type="int" Nullable="false" />
+    <Property Name="PHOTO_NAME" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="PHOTO_DESCRIPTION" Type="int" Nullable="false" />
+    <Property Name="PHOTO" Type="image" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="datetime" Nullable="false" />
+    <Property Name="CREATED_BY" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="datetime" />
+    <Property Name="LAST_MODIFIED_BY" Type="varchar" MaxLength="50" />
+    <Property Name="ROW_STATUS" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TOURIS_TM_DISTRICTS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CITY_ID" Type="int" Nullable="false" />
+    <Property Name="DISTRICTS_NAME" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="DISTRICTS_CODE" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="DISTRICTS_DESCRIPTION" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="datetime" Nullable="false" />
+    <Property Name="CREATED_BY" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="datetime" />
+    <Property Name="LAST_MODIFIED_BY" Type="varchar" MaxLength="50" />
+    <Property Name="ROW_STATUS" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TOURIS_TM_EVENT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EVENT_NAME" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="EVENT_DESCRIPTION" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="CATEGORY_ID" Type="int" Nullable="false" />
+    <Property Name="VILLAGE_ID" Type="int" Nullable="false" />
+    <Property Name="ADDRESS" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="START_TIME" Type="datetime" Nullable="false" />
+    <Property Name="END_TIME" Type="datetime" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="datetime" Nullable="false" />
+    <Property Name="CREATED_BY" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="datetime" />
+    <Property Name="LAST_MODIFIED_BY" Type="varchar" MaxLength="50" />
+    <Property Name="ROW_STATUS" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TOURIS_TM_EVENT_PHOTO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EVENT_ID" Type="int" Nullable="false" />
+    <Property Name="PHOTO_NAME" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="PHOTO_DESCRIPTION" Type="int" Nullable="false" />
+    <Property Name="PHOTO" Type="image" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="datetime" Nullable="false" />
+    <Property Name="CREATED_BY" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="datetime" />
+    <Property Name="LAST_MODIFIED_BY" Type="varchar" MaxLength="50" />
+    <Property Name="ROW_STATUS" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TOURIS_TM_MENU">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MENU_NAME" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MENU_PARENT_ID" Type="int" />
+    <Property Name="MENU_DESCRIPTION" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="datetime" Nullable="false" />
+    <Property Name="CREATED_BY" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="datetime" />
+    <Property Name="LAST_MODIFIED_BY" Type="varchar" MaxLength="50" />
+    <Property Name="ROW_STATUS" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TOURIS_TM_PARAMETER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PARAMETER_CODE" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="PARAMETER_DESCRIPTION" Type="varchar" MaxLength="500" />
+    <Property Name="PARAMETER_VALUE" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="datetime" Nullable="false" />
+    <Property Name="CREATED_BY" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="datetime" />
+    <Property Name="LAST_MODIFIED_BY" Type="varchar" MaxLength="50" />
+    <Property Name="ROW_STATUS" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TOURIS_TM_PROVINCE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="COUNTRY_ID" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="PROVINCE_NAME" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="PROVINCE_CODE" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="PROVINCE_DESCRIPTION" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="datetime" Nullable="false" />
+    <Property Name="CREATED_BY" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="datetime" />
+    <Property Name="LAST_MODIFIED_BY" Type="varchar" MaxLength="50" />
+    <Property Name="ROW_STATUS" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TOURIS_TM_ROLE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ROLE_NAME" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ROLE_DESCRIPTION" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="IS_ACTIVE" Type="int" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="datetime" Nullable="false" />
+    <Property Name="CREATED_BY" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="datetime" />
+    <Property Name="LAST_MODIFIED_BY" Type="varchar" MaxLength="50" />
+    <Property Name="ROW_STATUS" Type="int" Nullable="false" />
+    <Property Name="DEFAULT_SELECTED" Type="int" />
+  </EntityType>
+  <EntityType Name="TOURIS_TM_ROLE_MENU">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ROLE_ID" Type="int" Nullable="false" />
+    <Property Name="MENU_ID" Type="int" Nullable="false" />
+    <Property Name="IS_ACCESS" Type="int" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="datetime" Nullable="false" />
+    <Property Name="CREATED_BY" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="datetime" />
+    <Property Name="LAST_MODIFIED_BY" Type="varchar" MaxLength="50" />
+    <Property Name="ROW_STATUS" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TOURIS_TM_TESTIMONIAL">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TESTIMONI_DESCRIPTION" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="datetime" Nullable="false" />
+    <Property Name="CREATED_BY" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="datetime" />
+    <Property Name="LAST_MODIFIED_BY" Type="varchar" MaxLength="50" />
+    <Property Name="ROW_STATUS" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TOURIS_TM_TOUR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TOUR_NAME" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="TOUR_DESCRIPTION" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="CATEGORY_ID" Type="int" Nullable="false" />
+    <Property Name="VILLAGE_ID" Type="int" Nullable="false" />
+    <Property Name="ADDRESS" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="datetime" Nullable="false" />
+    <Property Name="CREATED_BY" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="datetime" />
+    <Property Name="LAST_MODIFIED_BY" Type="varchar" MaxLength="50" />
+    <Property Name="ROW_STATUS" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TOURIS_TM_TOUR_PHOTO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TOUR_ID" Type="int" Nullable="false" />
+    <Property Name="PHOTO_NAME" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="PHOTO_DESCRIPTION" Type="int" Nullable="false" />
+    <Property Name="PHOTO" Type="image" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="datetime" Nullable="false" />
+    <Property Name="CREATED_BY" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="datetime" />
+    <Property Name="LAST_MODIFIED_BY" Type="varchar" MaxLength="50" />
+    <Property Name="ROW_STATUS" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TOURIS_TM_USER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="USER_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="USER_MAIL" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="USER_NAME" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="USER_DT_ID" Type="int" Nullable="false" />
+    <Property Name="LAST_LOGIN" Type="datetime" />
+    <Property Name="PASSWORD" Type="varchar" MaxLength="50" />
+    <Property Name="CREATED_TIME" Type="datetime" Nullable="false" />
+    <Property Name="CREATED_BY" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="datetime" />
+    <Property Name="LAST_MODIFIED_BY" Type="varchar" MaxLength="50" />
+    <Property Name="ROW_STATUS" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TOURIS_TM_USER_DT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ROLE_ID" Type="int" Nullable="false" />
+    <Property Name="IS_SUPER_ADMIN" Type="int" />
+    <Property Name="CREATED_TIME" Type="datetime" Nullable="false" />
+    <Property Name="CREATED_BY" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="datetime" />
+    <Property Name="LAST_MODIFIED_BY" Type="varchar" MaxLength="50" />
+    <Property Name="ROW_STATUS" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TOURIS_TM_USER_PROFILE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="USER_ID_ID" Type="int" Nullable="false" />
+    <Property Name="PHOTO" Type="varbinary" MaxLength="1" />
+    <Property Name="GENDER" Type="char" MaxLength="1" />
+    <Property Name="BORN" Type="datetime" />
+    <Property Name="ADDRESS" Type="varchar" MaxLength="100" />
+    <Property Name="DESCRIPTION" Type="varchar" MaxLength="100" />
+    <Property Name="JOB" Type="varchar" MaxLength="100" />
+    <Property Name="COMPANY" Type="varchar" MaxLength="100" />
+    <Property Name="HOBBY" Type="varchar" MaxLength="100" />
+    <Property Name="CREATED_TIME" Type="datetime" Nullable="false" />
+    <Property Name="CREATED_BY" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="datetime" />
+    <Property Name="LAST_MODIFIED_BY" Type="varchar" MaxLength="50" />
+    <Property Name="ROW_STATUS" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TOURIS_TM_USER_PROFILE_SOSMED">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="USER_PROFILE_ID" Type="int" Nullable="false" />
+    <Property Name="SOSMED_NAME" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SOSMED_PATH" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="datetime" Nullable="false" />
+    <Property Name="CREATED_BY" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="datetime" />
+    <Property Name="LAST_MODIFIED_BY" Type="varchar" MaxLength="50" />
+    <Property Name="ROW_STATUS" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TOURIS_TM_VILLAGE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DISTRICTS_ID" Type="int" Nullable="false" />
+    <Property Name="CHILDHOOD_NAME" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CHILDHOOD_CODE" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CHILDHOOD_DESCRIPTION" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="datetime" Nullable="false" />
+    <Property Name="CREATED_BY" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="datetime" />
+    <Property Name="LAST_MODIFIED_BY" Type="varchar" MaxLength="50" />
+    <Property Name="ROW_STATUS" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_MENU_ROLE_EPROC">
+    <End Role="TOURIS_TM_MENU" Type="Self.TOURIS_TM_MENU" Multiplicity="1" />
+    <End Role="TOURIS_TM_ROLE_MENU" Type="Self.TOURIS_TM_ROLE_MENU" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TOURIS_TM_MENU">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TOURIS_TM_ROLE_MENU">
+        <PropertyRef Name="MENU_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ROLE">
+    <End Role="TOURIS_TM_ROLE" Type="Self.TOURIS_TM_ROLE" Multiplicity="1" />
+    <End Role="TOURIS_TM_ROLE_MENU" Type="Self.TOURIS_TM_ROLE_MENU" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TOURIS_TM_ROLE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TOURIS_TM_ROLE_MENU">
+        <PropertyRef Name="ROLE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ROLE_USER_DETAIL">
+    <End Role="TOURIS_TM_ROLE" Type="Self.TOURIS_TM_ROLE" Multiplicity="1" />
+    <End Role="TOURIS_TM_USER_DT" Type="Self.TOURIS_TM_USER_DT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TOURIS_TM_ROLE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TOURIS_TM_USER_DT">
+        <PropertyRef Name="ROLE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TOURIS_TM_CITY_TOURIS_TM_PROVINCE">
+    <End Role="TOURIS_TM_PROVINCE" Type="Self.TOURIS_TM_PROVINCE" Multiplicity="1" />
+    <End Role="TOURIS_TM_CITY" Type="Self.TOURIS_TM_CITY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TOURIS_TM_PROVINCE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TOURIS_TM_CITY">
+        <PropertyRef Name="PROVINCE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TOURIS_TM_CULINARY_PHOTO_TOURIS_TM_CULINARY">
+    <End Role="TOURIS_TM_CULINARY" Type="Self.TOURIS_TM_CULINARY" Multiplicity="1" />
+    <End Role="TOURIS_TM_CULINARY_PHOTO" Type="Self.TOURIS_TM_CULINARY_PHOTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TOURIS_TM_CULINARY">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TOURIS_TM_CULINARY_PHOTO">
+        <PropertyRef Name="CULINARY_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TOURIS_TM_CULINARY_TOURIS_TM_CATEGORY">
+    <End Role="TOURIS_TM_CATEGORY" Type="Self.TOURIS_TM_CATEGORY" Multiplicity="1" />
+    <End Role="TOURIS_TM_CULINARY" Type="Self.TOURIS_TM_CULINARY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TOURIS_TM_CATEGORY">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TOURIS_TM_CULINARY">
+        <PropertyRef Name="CATEGORY_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TOURIS_TM_CULINARY_TOURIS_TM_VILLAGE">
+    <End Role="TOURIS_TM_VILLAGE" Type="Self.TOURIS_TM_VILLAGE" Multiplicity="1" />
+    <End Role="TOURIS_TM_CULINARY" Type="Self.TOURIS_TM_CULINARY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TOURIS_TM_VILLAGE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TOURIS_TM_CULINARY">
+        <PropertyRef Name="VILLAGE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TOURIS_TM_DISTRICTS_TOURIS_TM_DISTRICTS">
+    <End Role="TOURIS_TM_CITY" Type="Self.TOURIS_TM_CITY" Multiplicity="1" />
+    <End Role="TOURIS_TM_DISTRICTS" Type="Self.TOURIS_TM_DISTRICTS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TOURIS_TM_CITY">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TOURIS_TM_DISTRICTS">
+        <PropertyRef Name="CITY_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TOURIS_TM_EVENT_PHOTO_TOURIS_TM_EVENT">
+    <End Role="TOURIS_TM_EVENT" Type="Self.TOURIS_TM_EVENT" Multiplicity="1" />
+    <End Role="TOURIS_TM_EVENT_PHOTO" Type="Self.TOURIS_TM_EVENT_PHOTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TOURIS_TM_EVENT">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TOURIS_TM_EVENT_PHOTO">
+        <PropertyRef Name="EVENT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TOURIS_TM_EVENT_TOURIS_TM_CATEGORY">
+    <End Role="TOURIS_TM_CATEGORY" Type="Self.TOURIS_TM_CATEGORY" Multiplicity="1" />
+    <End Role="TOURIS_TM_EVENT" Type="Self.TOURIS_TM_EVENT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TOURIS_TM_CATEGORY">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TOURIS_TM_EVENT">
+        <PropertyRef Name="CATEGORY_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TOURIS_TM_EVENT_TOURIS_TM_VILLAGE">
+    <End Role="TOURIS_TM_VILLAGE" Type="Self.TOURIS_TM_VILLAGE" Multiplicity="1" />
+    <End Role="TOURIS_TM_EVENT" Type="Self.TOURIS_TM_EVENT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TOURIS_TM_VILLAGE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TOURIS_TM_EVENT">
+        <PropertyRef Name="VILLAGE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TOURIS_TM_TOUR_PHOTO_TOURIS_TM_TOUR">
+    <End Role="TOURIS_TM_TOUR" Type="Self.TOURIS_TM_TOUR" Multiplicity="1" />
+    <End Role="TOURIS_TM_TOUR_PHOTO" Type="Self.TOURIS_TM_TOUR_PHOTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TOURIS_TM_TOUR">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TOURIS_TM_TOUR_PHOTO">
+        <PropertyRef Name="TOUR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TOURIS_TM_TOUR_TOURIS_TM_CATEGORY">
+    <End Role="TOURIS_TM_CATEGORY" Type="Self.TOURIS_TM_CATEGORY" Multiplicity="1" />
+    <End Role="TOURIS_TM_TOUR" Type="Self.TOURIS_TM_TOUR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TOURIS_TM_CATEGORY">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TOURIS_TM_TOUR">
+        <PropertyRef Name="CATEGORY_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TOURIS_TM_TOUR_TOURIS_TM_VILLAGE">
+    <End Role="TOURIS_TM_VILLAGE" Type="Self.TOURIS_TM_VILLAGE" Multiplicity="1" />
+    <End Role="TOURIS_TM_TOUR" Type="Self.TOURIS_TM_TOUR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TOURIS_TM_VILLAGE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TOURIS_TM_TOUR">
+        <PropertyRef Name="VILLAGE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TOURIS_TM_VILLAGE_TOURIS_TM_DISTRICTS">
+    <End Role="TOURIS_TM_DISTRICTS" Type="Self.TOURIS_TM_DISTRICTS" Multiplicity="1" />
+    <End Role="TOURIS_TM_VILLAGE" Type="Self.TOURIS_TM_VILLAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TOURIS_TM_DISTRICTS">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TOURIS_TM_VILLAGE">
+        <PropertyRef Name="DISTRICTS_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_USER_DT">
+    <End Role="TOURIS_TM_USER_DT" Type="Self.TOURIS_TM_USER_DT" Multiplicity="1" />
+    <End Role="TOURIS_TM_USER" Type="Self.TOURIS_TM_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TOURIS_TM_USER_DT">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TOURIS_TM_USER">
+        <PropertyRef Name="USER_DT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_USER_EPROC_PROFILE">
+    <End Role="TOURIS_TM_USER" Type="Self.TOURIS_TM_USER" Multiplicity="1" />
+    <End Role="TOURIS_TM_USER_PROFILE" Type="Self.TOURIS_TM_USER_PROFILE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TOURIS_TM_USER">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TOURIS_TM_USER_PROFILE">
+        <PropertyRef Name="USER_ID_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_USER_EPROC_PROFILE_SOSMED">
+    <End Role="TOURIS_TM_USER_PROFILE" Type="Self.TOURIS_TM_USER_PROFILE" Multiplicity="1" />
+    <End Role="TOURIS_TM_USER_PROFILE_SOSMED" Type="Self.TOURIS_TM_USER_PROFILE_SOSMED" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TOURIS_TM_USER_PROFILE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TOURIS_TM_USER_PROFILE_SOSMED">
+        <PropertyRef Name="USER_PROFILE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TourismpediaModelStoreContainer">
+    <EntitySet Name="TOURIS_TM_CATEGORY" EntityType="Self.TOURIS_TM_CATEGORY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TOURIS_TM_CITY" EntityType="Self.TOURIS_TM_CITY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TOURIS_TM_COUNTRY" EntityType="Self.TOURIS_TM_COUNTRY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TOURIS_TM_CULINARY" EntityType="Self.TOURIS_TM_CULINARY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TOURIS_TM_CULINARY_PHOTO" EntityType="Self.TOURIS_TM_CULINARY_PHOTO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TOURIS_TM_DISTRICTS" EntityType="Self.TOURIS_TM_DISTRICTS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TOURIS_TM_EVENT" EntityType="Self.TOURIS_TM_EVENT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TOURIS_TM_EVENT_PHOTO" EntityType="Self.TOURIS_TM_EVENT_PHOTO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TOURIS_TM_MENU" EntityType="Self.TOURIS_TM_MENU" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TOURIS_TM_PARAMETER" EntityType="Self.TOURIS_TM_PARAMETER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TOURIS_TM_PROVINCE" EntityType="Self.TOURIS_TM_PROVINCE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TOURIS_TM_ROLE" EntityType="Self.TOURIS_TM_ROLE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TOURIS_TM_ROLE_MENU" EntityType="Self.TOURIS_TM_ROLE_MENU" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TOURIS_TM_TESTIMONIAL" EntityType="Self.TOURIS_TM_TESTIMONIAL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TOURIS_TM_TOUR" EntityType="Self.TOURIS_TM_TOUR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TOURIS_TM_TOUR_PHOTO" EntityType="Self.TOURIS_TM_TOUR_PHOTO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TOURIS_TM_USER" EntityType="Self.TOURIS_TM_USER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TOURIS_TM_USER_DT" EntityType="Self.TOURIS_TM_USER_DT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TOURIS_TM_USER_PROFILE" EntityType="Self.TOURIS_TM_USER_PROFILE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TOURIS_TM_USER_PROFILE_SOSMED" EntityType="Self.TOURIS_TM_USER_PROFILE_SOSMED" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TOURIS_TM_VILLAGE" EntityType="Self.TOURIS_TM_VILLAGE" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_MENU_ROLE_EPROC" Association="Self.FK_MENU_ROLE_EPROC">
+      <End Role="TOURIS_TM_MENU" EntitySet="TOURIS_TM_MENU" />
+      <End Role="TOURIS_TM_ROLE_MENU" EntitySet="TOURIS_TM_ROLE_MENU" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ROLE" Association="Self.FK_ROLE">
+      <End Role="TOURIS_TM_ROLE" EntitySet="TOURIS_TM_ROLE" />
+      <End Role="TOURIS_TM_ROLE_MENU" EntitySet="TOURIS_TM_ROLE_MENU" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ROLE_USER_DETAIL" Association="Self.FK_ROLE_USER_DETAIL">
+      <End Role="TOURIS_TM_ROLE" EntitySet="TOURIS_TM_ROLE" />
+      <End Role="TOURIS_TM_USER_DT" EntitySet="TOURIS_TM_USER_DT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TOURIS_TM_CITY_TOURIS_TM_PROVINCE" Association="Self.FK_TOURIS_TM_CITY_TOURIS_TM_PROVINCE">
+      <End Role="TOURIS_TM_PROVINCE" EntitySet="TOURIS_TM_PROVINCE" />
+      <End Role="TOURIS_TM_CITY" EntitySet="TOURIS_TM_CITY" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TOURIS_TM_CULINARY_PHOTO_TOURIS_TM_CULINARY" Association="Self.FK_TOURIS_TM_CULINARY_PHOTO_TOURIS_TM_CULINARY">
+      <End Role="TOURIS_TM_CULINARY" EntitySet="TOURIS_TM_CULINARY" />
+      <End Role="TOURIS_TM_CULINARY_PHOTO" EntitySet="TOURIS_TM_CULINARY_PHOTO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TOURIS_TM_CULINARY_TOURIS_TM_CATEGORY" Association="Self.FK_TOURIS_TM_CULINARY_TOURIS_TM_CATEGORY">
+      <End Role="TOURIS_TM_CATEGORY" EntitySet="TOURIS_TM_CATEGORY" />
+      <End Role="TOURIS_TM_CULINARY" EntitySet="TOURIS_TM_CULINARY" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TOURIS_TM_CULINARY_TOURIS_TM_VILLAGE" Association="Self.FK_TOURIS_TM_CULINARY_TOURIS_TM_VILLAGE">
+      <End Role="TOURIS_TM_VILLAGE" EntitySet="TOURIS_TM_VILLAGE" />
+      <End Role="TOURIS_TM_CULINARY" EntitySet="TOURIS_TM_CULINARY" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TOURIS_TM_DISTRICTS_TOURIS_TM_DISTRICTS" Association="Self.FK_TOURIS_TM_DISTRICTS_TOURIS_TM_DISTRICTS">
+      <End Role="TOURIS_TM_CITY" EntitySet="TOURIS_TM_CITY" />
+      <End Role="TOURIS_TM_DISTRICTS" EntitySet="TOURIS_TM_DISTRICTS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TOURIS_TM_EVENT_PHOTO_TOURIS_TM_EVENT" Association="Self.FK_TOURIS_TM_EVENT_PHOTO_TOURIS_TM_EVENT">
+      <End Role="TOURIS_TM_EVENT" EntitySet="TOURIS_TM_EVENT" />
+      <End Role="TOURIS_TM_EVENT_PHOTO" EntitySet="TOURIS_TM_EVENT_PHOTO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TOURIS_TM_EVENT_TOURIS_TM_CATEGORY" Association="Self.FK_TOURIS_TM_EVENT_TOURIS_TM_CATEGORY">
+      <End Role="TOURIS_TM_CATEGORY" EntitySet="TOURIS_TM_CATEGORY" />
+      <End Role="TOURIS_TM_EVENT" EntitySet="TOURIS_TM_EVENT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TOURIS_TM_EVENT_TOURIS_TM_VILLAGE" Association="Self.FK_TOURIS_TM_EVENT_TOURIS_TM_VILLAGE">
+      <End Role="TOURIS_TM_VILLAGE" EntitySet="TOURIS_TM_VILLAGE" />
+      <End Role="TOURIS_TM_EVENT" EntitySet="TOURIS_TM_EVENT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TOURIS_TM_TOUR_PHOTO_TOURIS_TM_TOUR" Association="Self.FK_TOURIS_TM_TOUR_PHOTO_TOURIS_TM_TOUR">
+      <End Role="TOURIS_TM_TOUR" EntitySet="TOURIS_TM_TOUR" />
+      <End Role="TOURIS_TM_TOUR_PHOTO" EntitySet="TOURIS_TM_TOUR_PHOTO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TOURIS_TM_TOUR_TOURIS_TM_CATEGORY" Association="Self.FK_TOURIS_TM_TOUR_TOURIS_TM_CATEGORY">
+      <End Role="TOURIS_TM_CATEGORY" EntitySet="TOURIS_TM_CATEGORY" />
+      <End Role="TOURIS_TM_TOUR" EntitySet="TOURIS_TM_TOUR" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TOURIS_TM_TOUR_TOURIS_TM_VILLAGE" Association="Self.FK_TOURIS_TM_TOUR_TOURIS_TM_VILLAGE">
+      <End Role="TOURIS_TM_VILLAGE" EntitySet="TOURIS_TM_VILLAGE" />
+      <End Role="TOURIS_TM_TOUR" EntitySet="TOURIS_TM_TOUR" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TOURIS_TM_VILLAGE_TOURIS_TM_DISTRICTS" Association="Self.FK_TOURIS_TM_VILLAGE_TOURIS_TM_DISTRICTS">
+      <End Role="TOURIS_TM_DISTRICTS" EntitySet="TOURIS_TM_DISTRICTS" />
+      <End Role="TOURIS_TM_VILLAGE" EntitySet="TOURIS_TM_VILLAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_USER_DT" Association="Self.FK_USER_DT">
+      <End Role="TOURIS_TM_USER_DT" EntitySet="TOURIS_TM_USER_DT" />
+      <End Role="TOURIS_TM_USER" EntitySet="TOURIS_TM_USER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_USER_EPROC_PROFILE" Association="Self.FK_USER_EPROC_PROFILE">
+      <End Role="TOURIS_TM_USER" EntitySet="TOURIS_TM_USER" />
+      <End Role="TOURIS_TM_USER_PROFILE" EntitySet="TOURIS_TM_USER_PROFILE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_USER_EPROC_PROFILE_SOSMED" Association="Self.FK_USER_EPROC_PROFILE_SOSMED">
+      <End Role="TOURIS_TM_USER_PROFILE" EntitySet="TOURIS_TM_USER_PROFILE" />
+      <End Role="TOURIS_TM_USER_PROFILE_SOSMED" EntitySet="TOURIS_TM_USER_PROFILE_SOSMED" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

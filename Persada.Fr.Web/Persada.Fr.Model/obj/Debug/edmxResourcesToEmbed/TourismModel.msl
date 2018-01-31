@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TourismpediaModelStoreContainer" CdmEntityContainer="TourismpediaEntities">
+    <EntitySetMapping Name="TOURIS_TM_CATEGORY">
+      <EntityTypeMapping TypeName="TourismpediaModel.TOURIS_TM_CATEGORY">
+        <MappingFragment StoreEntitySet="TOURIS_TM_CATEGORY">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CATEGORY_CODE" ColumnName="CATEGORY_CODE" />
+          <ScalarProperty Name="CATEGORY_NAME" ColumnName="CATEGORY_NAME" />
+          <ScalarProperty Name="CATEGORY_DESCRIPTION" ColumnName="CATEGORY_DESCRIPTION" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TOURIS_TM_CITY">
+      <EntityTypeMapping TypeName="TourismpediaModel.TOURIS_TM_CITY">
+        <MappingFragment StoreEntitySet="TOURIS_TM_CITY">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PROVINCE_ID" ColumnName="PROVINCE_ID" />
+          <ScalarProperty Name="CITY_NAME" ColumnName="CITY_NAME" />
+          <ScalarProperty Name="CITY_CODE" ColumnName="CITY_CODE" />
+          <ScalarProperty Name="CITY_DESCRIPTION" ColumnName="CITY_DESCRIPTION" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TOURIS_TM_COUNTRY">
+      <EntityTypeMapping TypeName="TourismpediaModel.TOURIS_TM_COUNTRY">
+        <MappingFragment StoreEntitySet="TOURIS_TM_COUNTRY">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="COUNTRY_NAME" ColumnName="COUNTRY_NAME" />
+          <ScalarProperty Name="COUNTRY_CODE" ColumnName="COUNTRY_CODE" />
+          <ScalarProperty Name="COUNTRY_DESCRIPTION" ColumnName="COUNTRY_DESCRIPTION" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TOURIS_TM_CULINARY">
+      <EntityTypeMapping TypeName="TourismpediaModel.TOURIS_TM_CULINARY">
+        <MappingFragment StoreEntitySet="TOURIS_TM_CULINARY">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CULINARY_NAME" ColumnName="CULINARY_NAME" />
+          <ScalarProperty Name="CULINARY_DESCRIPTION" ColumnName="CULINARY_DESCRIPTION" />
+          <ScalarProperty Name="CATEGORY_ID" ColumnName="CATEGORY_ID" />
+          <ScalarProperty Name="VILLAGE_ID" ColumnName="VILLAGE_ID" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TOURIS_TM_CULINARY_PHOTO">
+      <EntityTypeMapping TypeName="TourismpediaModel.TOURIS_TM_CULINARY_PHOTO">
+        <MappingFragment StoreEntitySet="TOURIS_TM_CULINARY_PHOTO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CULINARY_ID" ColumnName="CULINARY_ID" />
+          <ScalarProperty Name="PHOTO_NAME" ColumnName="PHOTO_NAME" />
+          <ScalarProperty Name="PHOTO_DESCRIPTION" ColumnName="PHOTO_DESCRIPTION" />
+          <ScalarProperty Name="PHOTO" ColumnName="PHOTO" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TOURIS_TM_DISTRICTS">
+      <EntityTypeMapping TypeName="TourismpediaModel.TOURIS_TM_DISTRICTS">
+        <MappingFragment StoreEntitySet="TOURIS_TM_DISTRICTS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CITY_ID" ColumnName="CITY_ID" />
+          <ScalarProperty Name="DISTRICTS_NAME" ColumnName="DISTRICTS_NAME" />
+          <ScalarProperty Name="DISTRICTS_CODE" ColumnName="DISTRICTS_CODE" />
+          <ScalarProperty Name="DISTRICTS_DESCRIPTION" ColumnName="DISTRICTS_DESCRIPTION" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TOURIS_TM_EVENT">
+      <EntityTypeMapping TypeName="TourismpediaModel.TOURIS_TM_EVENT">
+        <MappingFragment StoreEntitySet="TOURIS_TM_EVENT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EVENT_NAME" ColumnName="EVENT_NAME" />
+          <ScalarProperty Name="EVENT_DESCRIPTION" ColumnName="EVENT_DESCRIPTION" />
+          <ScalarProperty Name="CATEGORY_ID" ColumnName="CATEGORY_ID" />
+          <ScalarProperty Name="VILLAGE_ID" ColumnName="VILLAGE_ID" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="START_TIME" ColumnName="START_TIME" />
+          <ScalarProperty Name="END_TIME" ColumnName="END_TIME" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TOURIS_TM_EVENT_PHOTO">
+      <EntityTypeMapping TypeName="TourismpediaModel.TOURIS_TM_EVENT_PHOTO">
+        <MappingFragment StoreEntitySet="TOURIS_TM_EVENT_PHOTO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EVENT_ID" ColumnName="EVENT_ID" />
+          <ScalarProperty Name="PHOTO_NAME" ColumnName="PHOTO_NAME" />
+          <ScalarProperty Name="PHOTO_DESCRIPTION" ColumnName="PHOTO_DESCRIPTION" />
+          <ScalarProperty Name="PHOTO" ColumnName="PHOTO" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TOURIS_TM_MENU">
+      <EntityTypeMapping TypeName="TourismpediaModel.TOURIS_TM_MENU">
+        <MappingFragment StoreEntitySet="TOURIS_TM_MENU">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MENU_NAME" ColumnName="MENU_NAME" />
+          <ScalarProperty Name="MENU_PARENT_ID" ColumnName="MENU_PARENT_ID" />
+          <ScalarProperty Name="MENU_DESCRIPTION" ColumnName="MENU_DESCRIPTION" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TOURIS_TM_PARAMETER">
+      <EntityTypeMapping TypeName="TourismpediaModel.TOURIS_TM_PARAMETER">
+        <MappingFragment StoreEntitySet="TOURIS_TM_PARAMETER">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PARAMETER_CODE" ColumnName="PARAMETER_CODE" />
+          <ScalarProperty Name="PARAMETER_DESCRIPTION" ColumnName="PARAMETER_DESCRIPTION" />
+          <ScalarProperty Name="PARAMETER_VALUE" ColumnName="PARAMETER_VALUE" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TOURIS_TM_PROVINCE">
+      <EntityTypeMapping TypeName="TourismpediaModel.TOURIS_TM_PROVINCE">
+        <MappingFragment StoreEntitySet="TOURIS_TM_PROVINCE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="COUNTRY_ID" ColumnName="COUNTRY_ID" />
+          <ScalarProperty Name="PROVINCE_NAME" ColumnName="PROVINCE_NAME" />
+          <ScalarProperty Name="PROVINCE_CODE" ColumnName="PROVINCE_CODE" />
+          <ScalarProperty Name="PROVINCE_DESCRIPTION" ColumnName="PROVINCE_DESCRIPTION" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TOURIS_TM_ROLE">
+      <EntityTypeMapping TypeName="TourismpediaModel.TOURIS_TM_ROLE">
+        <MappingFragment StoreEntitySet="TOURIS_TM_ROLE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ROLE_NAME" ColumnName="ROLE_NAME" />
+          <ScalarProperty Name="ROLE_DESCRIPTION" ColumnName="ROLE_DESCRIPTION" />
+          <ScalarProperty Name="IS_ACTIVE" ColumnName="IS_ACTIVE" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="DEFAULT_SELECTED" ColumnName="DEFAULT_SELECTED" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TOURIS_TM_ROLE_MENU">
+      <EntityTypeMapping TypeName="TourismpediaModel.TOURIS_TM_ROLE_MENU">
+        <MappingFragment StoreEntitySet="TOURIS_TM_ROLE_MENU">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ROLE_ID" ColumnName="ROLE_ID" />
+          <ScalarProperty Name="MENU_ID" ColumnName="MENU_ID" />
+          <ScalarProperty Name="IS_ACCESS" ColumnName="IS_ACCESS" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TOURIS_TM_TESTIMONIAL">
+      <EntityTypeMapping TypeName="TourismpediaModel.TOURIS_TM_TESTIMONIAL">
+        <MappingFragment StoreEntitySet="TOURIS_TM_TESTIMONIAL">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TESTIMONI_DESCRIPTION" ColumnName="TESTIMONI_DESCRIPTION" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TOURIS_TM_TOUR">
+      <EntityTypeMapping TypeName="TourismpediaModel.TOURIS_TM_TOUR">
+        <MappingFragment StoreEntitySet="TOURIS_TM_TOUR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TOUR_NAME" ColumnName="TOUR_NAME" />
+          <ScalarProperty Name="TOUR_DESCRIPTION" ColumnName="TOUR_DESCRIPTION" />
+          <ScalarProperty Name="CATEGORY_ID" ColumnName="CATEGORY_ID" />
+          <ScalarProperty Name="VILLAGE_ID" ColumnName="VILLAGE_ID" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TOURIS_TM_TOUR_PHOTO">
+      <EntityTypeMapping TypeName="TourismpediaModel.TOURIS_TM_TOUR_PHOTO">
+        <MappingFragment StoreEntitySet="TOURIS_TM_TOUR_PHOTO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TOUR_ID" ColumnName="TOUR_ID" />
+          <ScalarProperty Name="PHOTO_NAME" ColumnName="PHOTO_NAME" />
+          <ScalarProperty Name="PHOTO_DESCRIPTION" ColumnName="PHOTO_DESCRIPTION" />
+          <ScalarProperty Name="PHOTO" ColumnName="PHOTO" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TOURIS_TM_USER">
+      <EntityTypeMapping TypeName="TourismpediaModel.TOURIS_TM_USER">
+        <MappingFragment StoreEntitySet="TOURIS_TM_USER">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="USER_MAIL" ColumnName="USER_MAIL" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="USER_DT_ID" ColumnName="USER_DT_ID" />
+          <ScalarProperty Name="LAST_LOGIN" ColumnName="LAST_LOGIN" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TOURIS_TM_USER_DT">
+      <EntityTypeMapping TypeName="TourismpediaModel.TOURIS_TM_USER_DT">
+        <MappingFragment StoreEntitySet="TOURIS_TM_USER_DT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ROLE_ID" ColumnName="ROLE_ID" />
+          <ScalarProperty Name="IS_SUPER_ADMIN" ColumnName="IS_SUPER_ADMIN" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TOURIS_TM_USER_PROFILE">
+      <EntityTypeMapping TypeName="TourismpediaModel.TOURIS_TM_USER_PROFILE">
+        <MappingFragment StoreEntitySet="TOURIS_TM_USER_PROFILE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="USER_ID_ID" ColumnName="USER_ID_ID" />
+          <ScalarProperty Name="PHOTO" ColumnName="PHOTO" />
+          <ScalarProperty Name="GENDER" ColumnName="GENDER" />
+          <ScalarProperty Name="BORN" ColumnName="BORN" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="JOB" ColumnName="JOB" />
+          <ScalarProperty Name="COMPANY" ColumnName="COMPANY" />
+          <ScalarProperty Name="HOBBY" ColumnName="HOBBY" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TOURIS_TM_USER_PROFILE_SOSMED">
+      <EntityTypeMapping TypeName="TourismpediaModel.TOURIS_TM_USER_PROFILE_SOSMED">
+        <MappingFragment StoreEntitySet="TOURIS_TM_USER_PROFILE_SOSMED">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="USER_PROFILE_ID" ColumnName="USER_PROFILE_ID" />
+          <ScalarProperty Name="SOSMED_NAME" ColumnName="SOSMED_NAME" />
+          <ScalarProperty Name="SOSMED_PATH" ColumnName="SOSMED_PATH" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TOURIS_TM_VILLAGE">
+      <EntityTypeMapping TypeName="TourismpediaModel.TOURIS_TM_VILLAGE">
+        <MappingFragment StoreEntitySet="TOURIS_TM_VILLAGE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DISTRICTS_ID" ColumnName="DISTRICTS_ID" />
+          <ScalarProperty Name="CHILDHOOD_NAME" ColumnName="CHILDHOOD_NAME" />
+          <ScalarProperty Name="CHILDHOOD_CODE" ColumnName="CHILDHOOD_CODE" />
+          <ScalarProperty Name="CHILDHOOD_DESCRIPTION" ColumnName="CHILDHOOD_DESCRIPTION" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

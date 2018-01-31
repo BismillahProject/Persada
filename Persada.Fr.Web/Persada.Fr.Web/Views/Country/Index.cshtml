@@ -1,0 +1,104 @@
+﻿@model IEnumerable<Persada.Fr.ModelView.TOURIS_TV_COUNTRY> 
+@{
+    ViewBag.Title = "Index Country";
+}
+
+<h2>@ViewBag.Title.</h2>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@if (ViewBag.msgSuccess != null)
+{
+    <div class="alert alert-success">
+        <a href="#" class="close" type="button" data-dismiss="alert">
+            <i class="ace-icon fa fa-times"></i>
+        </a>
+
+        <strong>
+            <i class="ace-icon fa fa-check"></i>
+        </strong>
+        @ViewBag.msgSuccess
+        <br>
+    </div>
+}
+
+@if (ViewBag.msgError != null)
+{
+    <div class="alert alert-danger">
+        <a href="#" class="close" type="button" data-dismiss="alert">
+            <i class="ace-icon fa fa-times"></i>
+        </a>
+        <strong>
+            <i class="ace-icon fa fa-times"></i>
+        </strong>
+        @ViewBag.msgError
+        <br>
+    </div>
+} 
+<table class="table table-striped">
+    <tr>
+        <th>
+            Code 
+        </th>
+        <th>
+            Name
+        </th>
+        <th>
+            Description
+        </th>
+        <th>
+            Created Time
+        </th>
+        <th>
+            Created By
+        </th>
+        <th>
+            Last Modified Time
+        </th>
+        <th>
+            Last Modified By
+        </th>
+        <th>
+            Row Status
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.COUNTRY_CODE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.COUNTRY_NAME)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.COUNTRY_DESCRIPTION)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CREATED_TIME)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CREATED_BY)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LAST_MODIFIED_TIME)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LAST_MODIFIED_BY)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ROW_STATUS)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                @Html.ActionLink("Detail", "Detail", new { id = item.ID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+            </td>
+        </tr>
+    }
+
+</table>

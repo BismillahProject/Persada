@@ -1,0 +1,11 @@
+setup table: TOURIS_TM_
+1. menu - done
+2. Role - done
+3. menu-role - done
+4. user - done
+5. user_dt -done
+6. user_profile - done
+7. user_profile_sosmed - done
+
+8. country
+7. 

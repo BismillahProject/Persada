@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Persada.Fr.Model.TOURIS_TM_COUNTRY>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.COUNTRY_NAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.COUNTRY_CODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.COUNTRY_DESCRIPTION)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CREATED_TIME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CREATED_BY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LAST_MODIFIED_TIME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LAST_MODIFIED_BY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ROW_STATUS)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.COUNTRY_NAME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.COUNTRY_CODE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.COUNTRY_DESCRIPTION)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CREATED_TIME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CREATED_BY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LAST_MODIFIED_TIME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LAST_MODIFIED_BY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ROW_STATUS)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

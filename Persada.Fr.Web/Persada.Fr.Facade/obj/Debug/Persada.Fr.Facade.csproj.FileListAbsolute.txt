@@ -1,0 +1,66 @@
+E:\Project 2\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.Facade.dll.config
+E:\Project 2\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.Facade.dll
+E:\Project 2\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.Facade.pdb
+E:\Project 2\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\EntityFramework.dll
+E:\Project 2\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\EntityFramework.SqlServer.dll
+E:\Project 2\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.Model.dll
+E:\Project 2\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.Model.pdb
+E:\Project 2\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\EntityFramework.xml
+E:\Project 2\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\EntityFramework.SqlServer.xml
+E:\Project 2\Persada.Fr.Web\Persada.Fr.Facade\obj\Debug\Persada.Fr.Facade.csprojResolveAssemblyReference.cache
+E:\Project 2\Persada.Fr.Web\Persada.Fr.Facade\obj\Debug\Persada.Fr.Facade.dll
+E:\Project 2\Persada.Fr.Web\Persada.Fr.Facade\obj\Debug\Persada.Fr.Facade.pdb
+E:\Github\Persada\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.Facade.dll.config
+E:\Github\Persada\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.Facade.dll
+E:\Github\Persada\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.Facade.pdb
+E:\Github\Persada\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\EntityFramework.dll
+E:\Github\Persada\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\EntityFramework.SqlServer.dll
+E:\Github\Persada\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.Model.dll
+E:\Github\Persada\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.ModelView.dll
+E:\Github\Persada\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.ModelView.pdb
+E:\Github\Persada\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.Model.pdb
+E:\Github\Persada\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\EntityFramework.xml
+E:\Github\Persada\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\EntityFramework.SqlServer.xml
+E:\Github\Persada\Persada.Fr.Web\Persada.Fr.Facade\obj\Debug\Persada.Fr.Facade.csprojResolveAssemblyReference.cache
+E:\Github\Persada\Persada.Fr.Web\Persada.Fr.Facade\obj\Debug\Persada.Fr.Facade.dll
+E:\Github\Persada\Persada.Fr.Web\Persada.Fr.Facade\obj\Debug\Persada.Fr.Facade.pdb
+D:\Hamka\GitHub\Persada\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.Facade.dll.config
+D:\Hamka\GitHub\Persada\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.Facade.dll
+D:\Hamka\GitHub\Persada\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.Facade.pdb
+D:\Hamka\GitHub\Persada\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\EntityFramework.dll
+D:\Hamka\GitHub\Persada\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\EntityFramework.SqlServer.dll
+D:\Hamka\GitHub\Persada\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.Model.dll
+D:\Hamka\GitHub\Persada\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.ModelView.dll
+D:\Hamka\GitHub\Persada\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.ModelView.pdb
+D:\Hamka\GitHub\Persada\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.Model.pdb
+D:\Hamka\GitHub\Persada\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\EntityFramework.xml
+D:\Hamka\GitHub\Persada\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\EntityFramework.SqlServer.xml
+D:\Hamka\GitHub\Persada\Persada.Fr.Web\Persada.Fr.Facade\obj\Debug\Persada.Fr.Facade.csprojResolveAssemblyReference.cache
+D:\Hamka\GitHub\Persada\Persada.Fr.Web\Persada.Fr.Facade\obj\Debug\Persada.Fr.Facade.dll
+D:\Hamka\GitHub\Persada\Persada.Fr.Web\Persada.Fr.Facade\obj\Debug\Persada.Fr.Facade.pdb
+D:\Hamka\GitHub\Persada\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.CommonFunction.dll
+D:\Hamka\GitHub\Persada\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\System.Web.Mvc.dll
+D:\Hamka\GitHub\Persada\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Newtonsoft.Json.dll
+D:\Hamka\GitHub\Persada\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.CommonFunction.pdb
+D:\Hamka\GitHub\Persada\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\System.Web.Mvc.xml
+D:\Hamka\GitHub\Persada\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Newtonsoft.Json.xml
+D:\Hamka\GitHub\PersadaNew\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.Facade.dll.config
+D:\Hamka\GitHub\PersadaNew\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.Facade.dll
+D:\Hamka\GitHub\PersadaNew\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.Facade.pdb
+D:\Hamka\GitHub\PersadaNew\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\EntityFramework.dll
+D:\Hamka\GitHub\PersadaNew\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\EntityFramework.SqlServer.dll
+D:\Hamka\GitHub\PersadaNew\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.CommonFunction.dll
+D:\Hamka\GitHub\PersadaNew\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.Model.dll
+D:\Hamka\GitHub\PersadaNew\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.ModelView.dll
+D:\Hamka\GitHub\PersadaNew\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\System.Web.Mvc.dll
+D:\Hamka\GitHub\PersadaNew\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Newtonsoft.Json.dll
+D:\Hamka\GitHub\PersadaNew\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.CommonFunction.pdb
+D:\Hamka\GitHub\PersadaNew\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.ModelView.pdb
+D:\Hamka\GitHub\PersadaNew\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Persada.Fr.Model.pdb
+D:\Hamka\GitHub\PersadaNew\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\EntityFramework.xml
+D:\Hamka\GitHub\PersadaNew\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\EntityFramework.SqlServer.xml
+D:\Hamka\GitHub\PersadaNew\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\System.Web.Mvc.xml
+D:\Hamka\GitHub\PersadaNew\Persada.Fr.Web\Persada.Fr.Facade\bin\Debug\Newtonsoft.Json.xml
+D:\Hamka\GitHub\PersadaNew\Persada.Fr.Web\Persada.Fr.Facade\obj\Debug\Persada.Fr.Facade.csprojResolveAssemblyReference.cache
+D:\Hamka\GitHub\PersadaNew\Persada.Fr.Web\Persada.Fr.Facade\obj\Debug\Persada.Fr.Facade.dll
+D:\Hamka\GitHub\PersadaNew\Persada.Fr.Web\Persada.Fr.Facade\obj\Debug\Persada.Fr.Facade.pdb

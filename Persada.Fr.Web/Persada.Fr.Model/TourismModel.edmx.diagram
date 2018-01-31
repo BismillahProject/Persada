@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2806d31897184b86987c860d51af10f2" Name="Diagram1" ZoomLevel="66">
+        <EntityTypeShape EntityType="TourismpediaModel.TOURIS_TM_CATEGORY" Width="2.125" PointX="9.875" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourismpediaModel.TOURIS_TM_CITY" Width="1.875" PointX="3" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourismpediaModel.TOURIS_TM_COUNTRY" Width="2" PointX="0.5" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourismpediaModel.TOURIS_TM_CULINARY" Width="2" PointX="7.5" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourismpediaModel.TOURIS_TM_CULINARY_PHOTO" Width="1.5" PointX="5.125" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourismpediaModel.TOURIS_TM_DISTRICTS" Width="1.875" PointX="5.25" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourismpediaModel.TOURIS_TM_EVENT" Width="1.75" PointX="12.625" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourismpediaModel.TOURIS_TM_EVENT_PHOTO" Width="2" PointX="14.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourismpediaModel.TOURIS_TM_MENU" Width="1.75" PointX="15" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourismpediaModel.TOURIS_TM_PARAMETER" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourismpediaModel.TOURIS_TM_PROVINCE" Width="1.875" PointX="0.5" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourismpediaModel.TOURIS_TM_ROLE" Width="2.125" PointX="17.375" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourismpediaModel.TOURIS_TM_ROLE_MENU" Width="2.5" PointX="18.125" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourismpediaModel.TOURIS_TM_TESTIMONIAL" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourismpediaModel.TOURIS_TM_TOUR" Width="2.125" PointX="9.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourismpediaModel.TOURIS_TM_TOUR_PHOTO" Width="2" PointX="6.875" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourismpediaModel.TOURIS_TM_USER" Width="2" PointX="22.375" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourismpediaModel.TOURIS_TM_USER_DT" Width="2" PointX="19.875" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourismpediaModel.TOURIS_TM_USER_PROFILE" Width="3.25" PointX="24.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourismpediaModel.TOURIS_TM_USER_PROFILE_SOSMED" Width="2.125" PointX="24.125" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourismpediaModel.TOURIS_TM_VILLAGE" Width="1.875" PointX="7.5" PointY="6.125" IsExpanded="true" />
+        <AssociationConnector Association="TourismpediaModel.FK_TOURIS_TM_CULINARY_TOURIS_TM_CATEGORY" ManuallyRouted="false" />
+        <AssociationConnector Association="TourismpediaModel.FK_TOURIS_TM_EVENT_TOURIS_TM_CATEGORY" ManuallyRouted="false" />
+        <AssociationConnector Association="TourismpediaModel.FK_TOURIS_TM_TOUR_TOURIS_TM_CATEGORY" ManuallyRouted="false" />
+        <AssociationConnector Association="TourismpediaModel.FK_TOURIS_TM_CITY_TOURIS_TM_PROVINCE" ManuallyRouted="false" />
+        <AssociationConnector Association="TourismpediaModel.FK_TOURIS_TM_DISTRICTS_TOURIS_TM_DISTRICTS" ManuallyRouted="false" />
+        <AssociationConnector Association="TourismpediaModel.FK_TOURIS_TM_CULINARY_PHOTO_TOURIS_TM_CULINARY" ManuallyRouted="false" />
+        <AssociationConnector Association="TourismpediaModel.FK_TOURIS_TM_CULINARY_TOURIS_TM_VILLAGE" ManuallyRouted="false" />
+        <AssociationConnector Association="TourismpediaModel.FK_TOURIS_TM_VILLAGE_TOURIS_TM_DISTRICTS" ManuallyRouted="false" />
+        <AssociationConnector Association="TourismpediaModel.FK_TOURIS_TM_EVENT_PHOTO_TOURIS_TM_EVENT" ManuallyRouted="false" />
+        <AssociationConnector Association="TourismpediaModel.FK_TOURIS_TM_EVENT_TOURIS_TM_VILLAGE" ManuallyRouted="false" />
+        <AssociationConnector Association="TourismpediaModel.FK_MENU_ROLE_EPROC" ManuallyRouted="false" />
+        <AssociationConnector Association="TourismpediaModel.FK_ROLE" ManuallyRouted="false" />
+        <AssociationConnector Association="TourismpediaModel.FK_ROLE_USER_DETAIL" ManuallyRouted="false" />
+        <AssociationConnector Association="TourismpediaModel.FK_TOURIS_TM_TOUR_PHOTO_TOURIS_TM_TOUR" ManuallyRouted="false" />
+        <AssociationConnector Association="TourismpediaModel.FK_TOURIS_TM_TOUR_TOURIS_TM_VILLAGE" ManuallyRouted="false" />
+        <AssociationConnector Association="TourismpediaModel.FK_USER_DT" ManuallyRouted="false" />
+        <AssociationConnector Association="TourismpediaModel.FK_USER_EPROC_PROFILE" ManuallyRouted="false" />
+        <AssociationConnector Association="TourismpediaModel.FK_USER_EPROC_PROFILE_SOSMED" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
